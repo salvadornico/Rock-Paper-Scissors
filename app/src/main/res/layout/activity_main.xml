@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="tk.salvador_nico.rockpaperscissors.MainActivity">
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/player_throw"
+        android:layout_centerHorizontal="true"
+        android:text="@string/start_result"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <TextView
+        android:id="@+id/ai_throw"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/result"
+        android:layout_marginBottom="24dp"
+        android:background="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/player_throw"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorAccent"
+        />
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/player_throw"
+        android:layout_marginTop="24dp">
+
+        <Button
+            android:id="@+id/rock_button"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:text="@string/label_rock"
+            android:onClick="throwRock"
+            />
+
+        <Button
+            android:id="@+id/paper_button"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:text="@string/label_paper"
+            android:onClick="throwPaper"
+            />
+
+        <Button
+            android:id="@+id/scissors_button"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:text="@string/label_scissors"
+            android:onClick="throwScissors"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttons"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="@string/wins_label"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/wins_label_player"/>
+
+        <TextView
+            android:id="@+id/player_win_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/wins_label_ai"/>
+
+        <TextView
+            android:id="@+id/ai_win_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
