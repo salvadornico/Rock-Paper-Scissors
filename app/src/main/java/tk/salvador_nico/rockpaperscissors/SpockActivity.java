@@ -38,7 +38,7 @@ public class SpockActivity extends AppCompatActivity {
         aiWins = 0;
         playerWinsDisplay.setText(String.valueOf(playerWins));
         aiWinsDisplay.setText(String.valueOf(aiWins));
-        GameUtils.setGameModeChoices(6);
+        GameUtils.setGameModeChoices(5);
 
         rockButton.setOnClickListener(new View.OnClickListener() {
             @Override

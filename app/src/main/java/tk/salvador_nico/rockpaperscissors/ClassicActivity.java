@@ -36,7 +36,7 @@ public class ClassicActivity extends AppCompatActivity {
         aiWins = 0;
         playerWinsDisplay.setText(String.valueOf(playerWins));
         aiWinsDisplay.setText(String.valueOf(aiWins));
-        GameUtils.setGameModeChoices(4);
+        GameUtils.setGameModeChoices(3);
 
         rockButton.setOnClickListener(new View.OnClickListener() {
             @Override

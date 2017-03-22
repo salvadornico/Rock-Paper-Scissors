@@ -17,19 +17,19 @@ class GameUtils {
         int randNum;
         randNum = rand.nextInt(gameModeChoices);
         switch (randNum) {
-            case 1:
+            case 0:
                 aiThrow = "Rock";
                 break;
-            case 2:
+            case 1:
                 aiThrow = "Paper";
                 break;
-            case 3:
+            case 2:
                 aiThrow = "Scissors";
                 break;
-            case 4:
+            case 3:
                 aiThrow = "Lizard";
                 break;
-            case 5:
+            case 4:
                 aiThrow = "Spock";
         }
         return aiThrow;
